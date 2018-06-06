@@ -1,0 +1,37 @@
+<script>
+    const NAME_PIZZA = "Pizza 4 cheeses"
+    const NAME_WINGS = "Aripioare cu sos"
+    const NAME_COLA = "Coca Cola"
+    // DATE / CONSTANTE
+    const PRICE_PIZZA = 65.50; // MDL
+    const PRICE_WINGS = 25.00; // MDL
+    const PRICE_COLA = 15.00; // MDL
+
+    // afisam meniul
+    alert( "\u2615" + NAME_PIZZA + " - " + PRICE_PIZZA + " MDL " + "\n" +
+           "\u2615" + NAME_WINGS + " - " + PRICE_WINGS + " MDL " + "\n" +
+           "\u2615" + NAME_COLA + " - " + PRICE_COLA  + " MDL "
+            );
+
+// citim datele
+var n_pizza = prompt("How many pizza's do you want?");
+var n_wings = prompt("How many portion of wings do you want?");
+var n_cola = prompt("How many Cola do you want?");
+
+// calcule
+var cost_pizza = n_pizza * PRICE_PIZZA;
+var cost_wings = n_wings * PRICE_WINGS;
+var cost_cola = n_cola * PRICE_COLA;
+
+var total = cost_pizza + cost_wings + cost_cola;
+
+// afisare
+alert(
+        cost_pizza + " MDL \n" +
+        cost_wings + " MDL \n" +
+        cost_cola + " MDL \n" +
+        total + " MDL \n"
+);
+
+
+</script>
