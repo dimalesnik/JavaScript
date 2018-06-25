@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <h1>Create Your Account</h1>
+    <hr>
+    <input type="text" placeholder="Your full name"><br>
+    <input type="text" placeholder="Your email"><br>
+    <hr>
+    <h2>Contact Phone Numbers</h2>
+    <hr>
+    <input type="text" placeholder="phone 1"><br>
+    <button onclick="addPhone();" type="button">+ Add Phone</button><br>
+</form>
+<script>
+    var i = 1
+function addPhone() {
+    i++;
+if (i<=5) {
+    document.forms[0].innerHTML += '<input type="text" placeholder="phone ' + i + '"><br>'
+}
+}
+
+
+</script>
+</body>
+</html>

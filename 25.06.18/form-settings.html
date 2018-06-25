@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Dynamic Forms!</title>
+</head>
+<body>
+
+    <form>
+        
+        font-size:
+        <button onclick="decrement();" type="button">-</button>
+        <input type="text" value="10">
+        <button onclick="increment();" type="button">+</button>px
+        <h1 style="font-size: 10px;">Hello World!</h1>
+    </form>
+    
+    <script>
+        var size = 10;
+    function increment() {
+        
+        
+        
+        if (size<50) {
+            size++;
+            var input = document.querySelector('input');
+            var h1 = document.querySelector('h1');
+            h1.style.fontSize = size + 'px';
+            input.value = size;
+        }
+        //alert(size);
+    }
+    function decrement() {
+        if(size>1) {
+        size--;
+        var input = document.querySelector('input');
+        var h1 = document.querySelector('h1');
+        h1.style.fontSize = size + 'px';
+        input.value = size;
+        //alert(size)
+        }
+    }
+    </script>
+
+</body>
+</html>
