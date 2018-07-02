@@ -1,0 +1,6 @@
+.reflected{
+    transform: rotate(180deg);
+}
+img{
+    position: absolute;
+}
