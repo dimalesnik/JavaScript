@@ -1,0 +1,26 @@
+#road{
+    height: 24px;
+    border: 2px solid #DDD;
+    position: relative;
+}
+.tank{
+    height: 24px;
+    width: 24px;
+    background-image: url(1.png);
+    background-repeat: no-repeat;
+    /*background-color: #777;*/
+    background-position: center bottom;
+    position: absolute;
+}
+.tree{
+    height: 24px;
+    width: 24px;
+    background-image: url(2.png);
+    background-repeat: no-repeat;
+    /*background-color: #777; */
+    background-position: center bottom; 
+    position: absolute;
+}
+.tank.right{
+    transform: scaleX(-1)
+}

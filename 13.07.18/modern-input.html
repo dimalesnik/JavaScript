@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Input UI</title>
+</head>
+<body>
+
+    <input onkeyup="update();" type="text" id="phone" placeholder="enter phone">
+
+    <script>
+        var mask = "xxxx-xx-xx";
+        var text = '';
+        function update(){
+            var input = document.getElementById('phone');
+                var d = event.code.replace('Digit', '');
+                mask = mask.replace('x', d);
+                input.value = mask;
+                console.log( d );
+        }
+    </script>
+</body>
+</html>
