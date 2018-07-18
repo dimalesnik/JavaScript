@@ -1,0 +1,14 @@
+body {
+    background-color: #333;
+
+}
+
+#map {
+    width: 640px;
+    height: 640px;
+    background-image: url(../ICONS/water.gif); 
+    background-blend-mode: multiply;
+    background-color: #111;
+    border: 6px solid #222;
+    position: relative;
+}
