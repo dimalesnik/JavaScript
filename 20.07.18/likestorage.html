@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="like();">Like</button>
+<script>
+    function like(){
+        localStorage.setItem('like','yes');
+        checkLike();
+    }
+    function checkLike(){
+        if (localStorage.getItem('like') == 'yes') {
+            document.body.innerHTML = '<h1> You\'ve liked this page</h1>';
+        }
+    }
+    checkLike();
+</script>
+</body>
+</html>

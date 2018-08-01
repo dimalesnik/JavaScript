@@ -34,3 +34,11 @@ function moveTank(){ // event < capturam
         tank.className='tank right';
     }
 }
+
+function whereIsTheTank(){
+    if(left > window.innerWidth/2){
+        alert('right side')
+    }else{
+        alert('left side')
+    }
+}
