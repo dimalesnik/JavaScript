@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formular Inregistrare</title>
+</head>
+
+<body>
+    <h1 align="center">Tabel Formular</h1>
+    <form action="Final_de_inregistrare.html">
+        <table cellpadding="10" bgcolor="#DCDCDC" align="center">
+            <tr>
+                <td>
+                    <label for="Nume/Prenume">Nume/Prenume</label>
+                </td>
+                <td>
+                    <input pattern="[A-Za-z]{3,10} [A-Za-z]{3,10}" maxlength="10" required autofocus id="Nume/Prenume">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Data nasterii">Data nasterii</label>
+                </td>
+                <td>
+                    <input required id="Data nasterii" type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Ocupatii">Ocupatii</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Elev</option>
+                        <option>Somer</option>
+                        <option>Student</option>
+                        <option>Angajat</option>
+                        <option>Pensionar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Sex">Sex</label>
+                </td>
+                <td>
+                    <input required type="radio" name="gen"> M
+                    <br>
+                    <input type="radio" name="gen"> F
+                    <br>
+                    <input type="radio" name="gen"> N
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""><b><i>Sunt de acord cu <a href="Termeni_si_conditii.html" target="blank">conditiile</a></i></b></label>
+                </td>
+                <td>
+                    <input required type="checkbox" checked>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Autobiografie</label>
+                    <br>
+                    <textarea name="Autobiografie" rows="8" cols="40"></textarea>
+                    <br>
+                    <input required placeholder="Autobiografie">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button type="submit" name="button">Expediaza</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
